@@ -40,10 +40,4 @@ public class QWBallController : MonoBehaviour
 			rb2d.velocity = vel;
 		}
 	}
-	
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
