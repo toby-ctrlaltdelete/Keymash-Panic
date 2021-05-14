@@ -5,19 +5,11 @@ using UnityEngine;
 public class SGameController : MonoBehaviour
 {
 	public KeyCode Action = KeyCode.S;
-	
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(Action)) {
-			Debug.Log("" + transform.rotation.z);
-			
 			if (transform.rotation.z < 0){
 				
 				if (transform.rotation.z > -0.75 && transform.rotation.z < 0) {
