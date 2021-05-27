@@ -16,7 +16,7 @@ public class SGameController : MonoBehaviour
 					GameScoreManager.Score(1);
 				}
 				else {
-					GameScoreManager.Score(10);
+					GameScoreManager.LifeLoss(1);
 				}
 			}
 			else {
@@ -24,7 +24,7 @@ public class SGameController : MonoBehaviour
 					GameScoreManager.Score(1);
 				}
 				else {
-					GameScoreManager.Score(10);
+					GameScoreManager.LifeLoss(1);
 				}
 			}
 		}
