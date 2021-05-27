@@ -29,10 +29,9 @@ public class FGameFlyMovement : MonoBehaviour
         time += Time.deltaTime;
 		if (time >= changeInterval) {
 			time = 0;
-			rb2d.velocity = new Vector2(0,0);
 			float newX = Random.Range(-1.0f,1.0f);
 			float newY = Random.Range(-1.0f,1.0f);
-			rb2d.AddForce(new Vector2(newX, newY));
+			rb2d.velocity = new Vector2(newX, newY);
 		}
     }
 	
