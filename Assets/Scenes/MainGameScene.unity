@@ -6873,7 +6873,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.745283, g: 0.2285066, b: 0.2285066, a: 0.62352943}
   m_FlipX: 0
@@ -8237,6 +8237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734084502}
   - component: {fileID: 1734084503}
+  - component: {fileID: 1734084504}
   m_Layer: 0
   m_Name: KGamePlayer
   m_TagString: Untagged
@@ -8309,6 +8310,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1734084504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734084501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb8a469ff8f5284aa04a529425078a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Action: 107
 --- !u!1 &1822879233
 GameObject:
   m_ObjectHideFlags: 0
