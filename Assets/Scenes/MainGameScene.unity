@@ -2875,7 +2875,7 @@ GameObject:
   - component: {fileID: 547274134}
   - component: {fileID: 547274135}
   m_Layer: 0
-  m_Name: DNumberB
+  m_Name: DNumberB (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3253,7 +3253,7 @@ GameObject:
   - component: {fileID: 606443027}
   - component: {fileID: 606443028}
   m_Layer: 0
-  m_Name: DNumberE
+  m_Name: DNumberE (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4283,6 +4283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 826731944}
   - component: {fileID: 826731945}
+  - component: {fileID: 826731946}
   m_Layer: 0
   m_Name: LGameBall
   m_TagString: Untagged
@@ -4356,6 +4357,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &826731946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826731943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 075afadd710516e43873327157e101d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Action: 108
+  Hole: {fileID: 838850733}
+  BallArrow: {fileID: 2101312509}
 --- !u!1 &838850733
 GameObject:
   m_ObjectHideFlags: 0
@@ -5191,7 +5207,7 @@ GameObject:
   - component: {fileID: 1056441677}
   - component: {fileID: 1056441678}
   m_Layer: 0
-  m_Name: DNumberD
+  m_Name: DNumberD (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5717,7 +5733,7 @@ GameObject:
   - component: {fileID: 1141504137}
   - component: {fileID: 1141504138}
   m_Layer: 0
-  m_Name: DNumberA
+  m_Name: DNumberA (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6335,7 +6351,7 @@ GameObject:
   - component: {fileID: 1321951996}
   - component: {fileID: 1321951997}
   m_Layer: 0
-  m_Name: DNumberF
+  m_Name: DNumberF (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7376,12 +7392,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Action: 100
-  Dice1: {fileID: 0}
-  Dice2: {fileID: 0}
-  Dice3: {fileID: 0}
-  Dice4: {fileID: 0}
-  Dice5: {fileID: 0}
-  Dice6: {fileID: 0}
+  Dice1: {fileID: 2123408109}
+  Dice2: {fileID: 606443026}
+  Dice3: {fileID: 1141504136}
+  Dice4: {fileID: 547274133}
+  Dice5: {fileID: 1056441676}
+  Dice6: {fileID: 1321951995}
 --- !u!1 &1617107828
 GameObject:
   m_ObjectHideFlags: 0
@@ -9177,6 +9193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045885577}
   - component: {fileID: 2045885578}
+  - component: {fileID: 2045885579}
   m_Layer: 0
   m_Name: GunnerBarrel
   m_TagString: Untagged
@@ -9192,7 +9209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045885576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.33, y: 0, z: 0}
+  m_LocalPosition: {x: -0.38, y: 0, z: 0}
   m_LocalScale: {x: 0.15, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 109335789}
@@ -9249,6 +9266,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2045885579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045885576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 300d4e4de528198428e4f285d42cda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2051937159
 GameObject:
   m_ObjectHideFlags: 0
@@ -10176,7 +10205,7 @@ GameObject:
   - component: {fileID: 2123408110}
   - component: {fileID: 2123408111}
   m_Layer: 0
-  m_Name: DNumberC
+  m_Name: DNumberC (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
