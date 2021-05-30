@@ -37,6 +37,19 @@ public class LGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+		if (Input.GetKeyDown(Action)) {
+			rb2d.AddForce(transform.right * 1);
+		}
+        transform.Rotate(0, 0, 45*Time.deltaTime);
+    }
+	
+	void OnTriggerEnter2D (Collider2D hitInfo) {
+        if (hitInfo.name == "LGameHole")
+        {
+			GameScoreManager.Score(1);
+			Invoke("NewHolePosition", 0);
+        }
+		transform.localPosition = Vector2.zero;
+		rb2d.velocity = Vector2.zero;
     }
 }
