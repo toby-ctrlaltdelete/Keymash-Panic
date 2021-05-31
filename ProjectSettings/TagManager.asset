@@ -6,6 +6,7 @@ TagManager:
   tags:
   - QWGameBall
   - Pickup
+  - Ground
   layers:
   - Default
   - TransparentFX
