@@ -18,9 +18,9 @@ public class QWBallController : MonoBehaviour
 	rb2d = GetComponent<Rigidbody2D>();
     float rand = Random.Range(0, 2);
 		if(rand < 1){
-			rb2d.AddForce(new Vector2((float)1.5, (float)-0.75));
+			rb2d.AddForce(new Vector2((float)1.0, (float)-0.75));
 		} else {
-			rb2d.AddForce(new Vector2((float)-1.5, (float)-0.75));
+			rb2d.AddForce(new Vector2((float)-1.0, (float)-0.75));
 		}
 	}
 

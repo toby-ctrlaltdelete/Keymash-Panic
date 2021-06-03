@@ -22,6 +22,7 @@ public class DGameController : MonoBehaviour
     {
 		spriteR = gameObject.GetComponent<SpriteRenderer>();
 		currentDiceNumber = 1;
+		Invoke("NewDiceValue", 0);
     }
 	
 	void NewDiceValue()
