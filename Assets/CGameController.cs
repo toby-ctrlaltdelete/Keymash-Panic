@@ -19,12 +19,37 @@ public class CGameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("SelectTooth", 4);
     }
 	
 	void SelectTooth()
 	{
-		
+		int rand = Random.Range(1,4);
+		print(rand);
+		selectedTooth = rand;
+		ToothBase.transform.localPosition = new Vector2(0, 0.375f);
+		ToothBase.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, -0.25f);
+		Tooth1.transform.localPosition = new Vector2(-0.333f, 0.125f);
+		Tooth1.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, -0.25f);
+		Tooth2.transform.localPosition = new Vector2(0.0f, 0.125f);
+		Tooth2.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, -0.25f);
+		Tooth3.transform.localPosition = new Vector2(0.333f, 0.125f);
+		Tooth3.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, -0.25f);
+		switch (selectedTooth) {
+			case 3:
+				Tooth3.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+				break;
+			case 2:
+				Tooth2.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+				break;
+			case 1:
+				Tooth1.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+				break;
+			default:
+				Tooth3.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+				print("C: Selected tooth outside of 1 to 3 was used, maybe fix that?");
+				break;
+		}
 	}
 
     // Update is called once per frame
