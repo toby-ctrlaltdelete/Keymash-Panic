@@ -79,4 +79,12 @@ public class CGameController : MonoBehaviour
 			transform.localPosition = localPos;
 		}
     }
+	
+	void OnTriggerEnter2D (Collider2D hitInfo) {
+        if (hitInfo.name == "CrusherTooth1" || hitInfo.name == "CrusherTooth2" || hitInfo.name == "CrusherTooth3")
+        {
+			GameScoreManager.LifeLoss(1);
+			Invoke("SelectTooth", 0);
+        }
+    }
 }
