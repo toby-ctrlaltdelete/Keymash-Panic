@@ -1283,6 +1283,66 @@ MonoBehaviour:
     removedLetter: 1
     correctLetter: F
     incorrectLetter: L
+  - word: GAINS
+    removedLetter: 2
+    correctLetter: A
+    incorrectLetter: E
+  - word: GAMER
+    removedLetter: 3
+    correctLetter: M
+    incorrectLetter: N
+  - word: GAMMA
+    removedLetter: 4
+    correctLetter: M
+    incorrectLetter: W
+  - word: GEARS
+    removedLetter: 5
+    correctLetter: S
+    incorrectLetter: K
+  - word: GEESE
+    removedLetter: 2
+    correctLetter: E
+    incorrectLetter: O
+  - word: GENIE
+    removedLetter: 2
+    correctLetter: E
+    incorrectLetter: Y
+  - word: GEODE
+    removedLetter: 4
+    correctLetter: D
+    incorrectLetter: C
+  - word: GIFTS
+    removedLetter: 3
+    correctLetter: F
+    incorrectLetter: E
+  - word: GIVES
+    removedLetter: 1
+    correctLetter: G
+    incorrectLetter: O
+  - word: GLASS
+    removedLetter: 3
+    correctLetter: A
+    incorrectLetter: S
+  - word: GLOBE
+    removedLetter: 4
+    correctLetter: B
+    incorrectLetter: R
+  - word: GLOVE
+    removedLetter: 3
+    correctLetter: O
+    incorrectLetter: U
+  - word: GOOEY
+    removedLetter: 5
+    correctLetter: Y
+    incorrectLetter: P
+  - word: GRASS
+    removedLetter: 1
+    correctLetter: G
+    incorrectLetter: L
+  - word: GREED
+    removedLetter: 5
+    correctLetter: D
+    incorrectLetter: G
 --- !u!1 &163898717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,6 +2906,7 @@ GameObject:
   - component: {fileID: 501717297}
   - component: {fileID: 501717299}
   - component: {fileID: 501717298}
+  - component: {fileID: 501717300}
   m_Layer: 0
   m_Name: CGamePlayer
   m_TagString: Untagged
@@ -2935,6 +2996,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &501717300
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501717296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
