@@ -17,7 +17,6 @@ public class DGameController : MonoBehaviour
 	private int currentDiceNumber;
 	private int pickedDiceNumber;
 	
-    // Start is called before the first frame update
     void Start()
     {
 		spriteR = gameObject.GetComponent<SpriteRenderer>();
@@ -25,6 +24,7 @@ public class DGameController : MonoBehaviour
 		Invoke("NewDiceValue", 0);
     }
 	
+	// Picks whatever new dice will be in the center, and thus the one needed to be picked for points
 	void NewDiceValue()
 	{
 		int rand = Random.Range(0,7);
@@ -32,11 +32,11 @@ public class DGameController : MonoBehaviour
 		pickedDiceNumber = rand;
 	}
 
-    // Update is called once per frame
     void Update()
     {
         switchTimer += (0.5f*Time.deltaTime);
 		if (switchTimer >= 1.0f) {
+			//Oh boy, more ultra-complicated switch cases!
             switch (currentDiceNumber) {
 			case 6:
 				currentDiceNumber = 1;

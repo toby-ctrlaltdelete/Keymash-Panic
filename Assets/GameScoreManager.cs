@@ -9,7 +9,7 @@ public class GameScoreManager : MonoBehaviour
 
 	public GUISkin layout;
 
-	GameObject QWGame;
+	public GameObject QWGame;
 
 	// Call will add to the score as necessary
 	public static void Score (int ScoreAmount) {
@@ -28,7 +28,7 @@ public class GameScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        QWGame = GameObject.Find("Q/WGameWindow");
+        
     }
 
     // Update is called once per frame

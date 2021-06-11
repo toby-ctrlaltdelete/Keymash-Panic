@@ -12,7 +12,7 @@ public class EGameController : MonoBehaviour
 	private float basketPos2 = 0.25f;
 	private int currentBasketPos = 1;
 	
-    // Start is called before the first frame update
+    //Ensure the gravity and velocity is at zero, so it doesn't fall before we want it to fall
     void Start()
     { 
 		rb2d = GetComponent<Rigidbody2D>();
@@ -21,6 +21,7 @@ public class EGameController : MonoBehaviour
 		Invoke("MakeEggFall", 2);
     }
 	
+	//And this is for when we want it to fall
 	void MakeEggFall()
 	{
 		rb2d.gravityScale = 0.25f;
@@ -29,6 +30,7 @@ public class EGameController : MonoBehaviour
 	void Update()
 	{
 		if (Input.GetKeyDown(Action)) {
+			//Thankfully, since there's only two positions for the basket, an if else statement is perfect here!
 			if (currentBasketPos == 1) {
 				currentBasketPos = 2;
 				Basket.transform.localPosition = new Vector2(basketPos2, -0.3f);
